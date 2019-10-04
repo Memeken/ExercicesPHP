@@ -6,7 +6,7 @@
 </head>
 <body>
 	<p>
-		<?php
+		<? php
 		$variable = "platon \"atlantide\" est belle";
 		$phraseTest = "l'éléphant devant l'enveloppe illuminé d'une carte postale joyeuse";
 
@@ -22,10 +22,10 @@
 
 		echo "$phraseTest";
 
-	?>
+		?>
 	</p>
 
-	<?php
+	<? php
 		$variable = 'platon atlantide est belle';
 
 		echo "$variable" . '<br>';
@@ -40,14 +40,14 @@
 
 	?>
 
-	<?php
+	<? php
 
 	 $var1= true;
 	 echo gettype($var1) . "\n";
 
 	 ?>
 
-	 <?php // exo 9
+	 <? php // exo 9
 	 	$mouchoir ='sale';
 	 	$sale = 'mouchoir';
 	 	$temporaire = &$mouchoir;
@@ -61,6 +61,7 @@
 	 ?>
 
 	 <? php // exo 10
+	 	
 
 	 ?>
 
