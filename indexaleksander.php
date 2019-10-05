@@ -6,7 +6,7 @@
 </head>
 <body>
 	<p>
-		<? php
+		<?php
 		$variable = "platon \"atlantide\" est belle";
 		$phraseTest = "l'éléphant devant l'enveloppe illuminé d'une carte postale joyeuse";
 
@@ -22,10 +22,10 @@
 
 		echo "$phraseTest";
 
-		?>
+	?>
 	</p>
 
-	<? php
+	<?php
 		$variable = 'platon atlantide est belle';
 
 		echo "$variable" . '<br>';
@@ -40,14 +40,14 @@
 
 	?>
 
-	<? php
+	<?php
 
 	 $var1= true;
 	 echo gettype($var1) . "\n";
 
 	 ?>
 
-	 <? php // exo 9
+	 <?php // exo 9
 	 	$mouchoir ='sale';
 	 	$sale = 'mouchoir';
 	 	$temporaire = &$mouchoir;
@@ -60,10 +60,148 @@
 	 	echo $sale;
 	 ?>
 
-	 <? php // exo 10
-	 	
+	 <br>
+
+	 <?php //exo 11
+		$argent = true;
+
+		if($argent === true)
+		{
+  			echo "je vis bien";
+		}
+		else
+		{
+			echo "je suis mal";
+		}
+	 ?>
+	 <br>
+
+	 <?php //exo 12
+	 	$argent = true;
+	 	$jeNeVisPasDansUnePoubelle = true;
+
+
+		if($argent === true)
+		{
+  			echo "je vis bien";
+
+  			if($jeNeVisPasDansUnePoubelle === false)
+  			{
+  				echo "je me sens heureux";
+  			}
+		}
+
+		else
+		{
+			echo "la vie est triste" . "<br>" . "<br>";
+		}
 
 	 ?>
+		<?php
+	  	// exo 13 // 
+	  	//= est utilisé pour l'assignation, genre $variable = 0;
+		//== est utilisé pour les comparaisons de valeur.
+		//=== est utilisé pour les comparaison de valeur et de type.
+		?>
+
+		<?php
+
+		$vivreBien = "je vis bien";
+		$argent = 1;
+
+		$vivreBien = ($argent >= 1) ? true : false; // poser la question à Aleksander et savoir si on peut mettre une echo dans la ternaire
+		
+		?>
+
+		
+		<br>
+		
+
+		<?php
+		$i = "je suis née en France"; //exo 18
+
+		switch ($i) {
+    			case "je suis née en France":
+        			echo "je suis Française";
+        			break;
+    			case "je suis née en Espagne":
+        			echo "je suis Espagnole";
+        			break;
+    			case "je suis née au Portugal":
+        			echo "je suis Portugaise";
+        			break;
+        		case "je suis née en Allemagne":
+        			echo "je suis Allemande";
+        			break;
+    			case "je suis née en Suisse":
+        			echo "je suis Suisse";
+        			break;
+				}
+		?>
+
+
+		<br>
+
+
+		<?php // exo 20
+
+		echo date('Y-m-d H:i:s');
+
+		?>
+
+
+		<br>
+
+
+		<?php // exo 21
+			$phrase = substr("Lorizzle ipsum bling bling sit amizzle, consectetuer adipiscing elit. Nizzle sapien velizzle, bling bling volutpat, suscipit , gravida vel, arcu. Check it out hizzle that's the shizzle. We gonna chung erizzle. Fo izzle dolor fo turpis tempizzle tempor. Gangsta boom shackalack mofo et turpizzle. Sizzle izzle tortor. Pellentesque uhuh ... yih!", -50);    // retourne "f"
+			echo $phrase;
+			
+		?>
+
+
+		<br>
+
+
+		<?php
+			$nb = "Une cuillère c'est mieux qu'une cuillère";
+			echo strlen($nb);
+		?>
+
+
+		<br>
+
+
+		<?php //exo 23
+			$a = 'oui';
+					
+			if (isset($a)) {
+    			echo 'C\'est cool';
+			}
+			else{
+				echo 'C\'est pas cool';
+			}
+
+		?>
+
+
+		<br>
+
+
+		<?php // exo 24
+			$a = 'oui';
+					
+			if (empty($a)) {
+    			echo 'C\'est cool';
+			}
+			else{
+				echo 'C\'est moins cool';
+			}
+		?>
+
+
+
+	
 
 	
 </body>
