@@ -40,12 +40,14 @@
 
 	?>
 
-	<?php
+	<?php // exo 8
 
 	 $var1= true;
 	 echo gettype($var1) . "\n";
 
 	 ?>
+
+	 <br>
 
 	 <?php // exo 9
 	 	$mouchoir ='sale';
@@ -58,6 +60,14 @@
 
 	 	echo $mouchoir;
 	 	echo $sale;
+	 ?>
+
+	 <br>
+
+	 <?php //exo 10
+	 	echo 'Prenez ce' . __FILE__ . '<br>';
+	 	echo 'Numéro de ligne' . __LINE__ . '<br>';
+	 	echo 'Le chemin du dossier contenu le script actif' . __DIR__;
 	 ?>
 
 	 <br>
@@ -109,7 +119,7 @@
 		$vivreBien = "je vis bien";
 		$argent = 1;
 
-		$vivreBien = ($argent >= 1) ? true : false; // poser la question à Aleksander et savoir si on peut mettre une echo dans la ternaire
+		echo $vivreBien = ($argent >= 1) ? true : false; // poser la question à Aleksander et savoir si on peut mettre une echo dans la ternaire
 		
 		?>
 
@@ -145,7 +155,7 @@
 
 		<?php // exo 20
 
-		echo date('Y-m-d H:i:s');
+		echo date('d/m/Y :H:i:s');
 
 		?>
 
@@ -163,7 +173,7 @@
 		<br>
 
 
-		<?php
+		<?php // exo 22
 			$nb = "Une cuillère c'est mieux qu'une cuillère";
 			echo strlen($nb);
 		?>
@@ -198,7 +208,11 @@
 				echo 'C\'est moins cool';
 			}
 		?>
-
+		<br>
+		<?php // exo 5
+		      $var10 = 'l\'éléphant';
+		      echo '<p>'. $var10 . '</p>';
+		?>
 
 
 	
