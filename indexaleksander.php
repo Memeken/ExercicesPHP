@@ -213,6 +213,110 @@
 		      $var10 = 'l\'éléphant';
 		      echo '<p>'. $var10 . '</p>';
 		?>
+		<br>
+
+		<?php  /// exo 26 :déclaration d'une fonction
+
+			function Tva($nombre){ // la fonction s'appelle TVA (variable qui contiendra le nombre appelé par l'echo)
+
+			    return $nombre*1.2; // return est l'application est traduit comme égal, $variable qu'on connait pas encore multiplié par 1.2
+
+			}
+			// exécution de la fonction
+			echo Tva(20) . "<br>"; 
+			echo Tva(10);
+			// on demande la fonction TVA pour le nombre 10 par exemple = 12
+		?>
+		<br>
+
+		<?php  /// exo 27 :déclaration d'une fonction
+
+			function cTva($nb, $tva)
+			{ // la fonction s'appelle TVA (variable qui contiendra le nombre appelé par l'echo)
+
+			    return $nb*$tva; // return est l'application est traduit comme égal, $variable qu'on connait pas encore multiplié par 1.2
+			}
+
+			// exécution de la fonction
+			echo cTva(500 , 1.055) . "<br>";
+			echo cTva(1000, 1.20) . "<br>"; // on demande la fonction TVA pour le nombre 10 par exemple = 12
+		?>
+
+		<?php  /// exo 28
+
+			function emptyTva($nb, $tva)
+			{ // la fonction s'appelle TVA (variable qui contiendra le nombre appelé par l'echo)
+				$tva = 1.2;
+			    return $nb*$tva; // return est l'application est traduit comme égal, $variable qu'on connait pas encore multiplié par 1.2
+
+				 
+			}
+
+			// exécution de la fonction
+			echo emptyTva(500 , "") . "<br>";
+			$tva=1.055; // voir lionel marche pas
+			echo emptyTva(1000 , ""); // on demande la fonction TVA pour le nombre 10 par exemple = 12
+		?>
+		<br>
+
+		<?php //exo 29
+			
+				function Meteo($argument1,$argument2) {
+					$degres="degrés";
+    			
+	    			if ($argument2==1 || $argument2==0){
+	    				$degres= "degré";
+					} 
+					else{
+						$degres="degrés";
+					}
+
+					echo "Nous sommes en $argument1 et il fait $argument2 $degres";
+					
+				}
+
+				Meteo("hiver",1);
+				echo "<br>";
+				Meteo("été",30); 
+				echo "<br>";
+				Meteo("hiver",0);
+				echo "<br>";
+				Meteo("hiver",-3);
+				echo "<br>";
+				Meteo(30,"été"); // exo 30 probleme dans l'ordre d'affichage		
+		?>
+		<br>
+
+		<?php //exo 33
+
+			$a=10;
+			$b=2;
+			
+			echo $a + $b . "<br>";
+			echo $a - $b . "<br>";
+			echo $a * $b . "<br>";
+			echo $a / $b . "<br>";
+			echo $a % $b . "<br>";
+			echo $a += $b . "<br>";
+			echo $a -= $b . "<br>"; // exo 34 = 10
+		?>
+		<br>
+		<?php 
+			echo "<table><tr>";
+				for($i = 0; $i < 10; $i++) {
+					
+   					echo "<tr>$i</tr>";
+
+				}
+				echo "</tr></table>";
+			
+
+
+			
+		?>
+
+		
+
 
 
 	
