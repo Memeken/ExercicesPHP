@@ -75,7 +75,7 @@
 	 <?php //exo 11
 		$argent = true;
 
-		if($argent === true)
+		if($argent)
 		{
   			echo "je vis bien";
 		}
@@ -106,6 +106,15 @@
 			echo "la vie est triste" . "<br>" . "<br>";
 		}
 
+		//if($argent && $domicile){
+		//echo "je vis bien";
+		//}
+		//else{
+		//echo "la vie est triste";
+		//}
+		DEFINE('BR','<br>');
+		BR;
+
 	 ?>
 		<?php
 	  	// exo 13 // 
@@ -117,9 +126,10 @@
 		<?php
 
 		$vivreBien = "je vis bien";
-		$argent = 1;
+		$vivrePasBien ="je suis mal";
+		$argent = true;
 
-		echo $vivreBien = ($argent >= 1) ? true : false; // poser la question à Aleksander et savoir si on peut mettre une echo dans la ternaire
+		echo $vivre = ($argent) ? $vivreBien : $vivrePasBien; // poser la question à Aleksander et savoir si on peut mettre une echo dans la ternaire
 		
 		?>
 
@@ -128,9 +138,9 @@
 		
 
 		<?php
-		$i = "je suis née en France"; //exo 18
+		$country = "je suis née en France"; //exo 18
 
-		switch ($i) {
+		switch ($country) {
     			case "je suis née en France":
         			echo "je suis Française";
         			break;
@@ -145,6 +155,9 @@
         			break;
     			case "je suis née en Suisse":
         			echo "je suis Suisse";
+        			break;
+        		default:
+        			echo "je suis citoyen du monde";
         			break;
 				}
 		?>
@@ -183,7 +196,7 @@
 
 
 		<?php //exo 23
-			$a = 'oui';
+			$a = '';
 					
 			if (isset($a)) {
     			echo 'C\'est cool';
@@ -301,18 +314,26 @@
 			echo $a -= $b . "<br>"; // exo 34 = 10
 		?>
 		<br>
-		<?php 
-			echo "<table><tr>";
-				for($i = 0; $i < 10; $i++) {
-					
+		<?php // exo 36
+			echo "<table>";
+				for($i = 0; $i < 10; $i++) {			
    					echo "<tr>$i</tr>";
-
 				}
-				echo "</tr></table>";
-			
+			echo "</table>";		
+		?>
+		<br>
+		<?php
+		echo "<table border=1>"; 
+			for ($i=1; $i <10; $i++) {
+				echo "<tr>"; 
+				for ($j=1; $j <10; $j++) { 
+					$multip=$i*$j;
+					echo "<td>$multip</td>";
+					}
+					"</tr>";
+			}
+			echo "</table>";
 
-
-			
 		?>
 
 		
